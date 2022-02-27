@@ -1,0 +1,22 @@
+
+section#demo {
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+	background: #fbfbfb;
+    position: relative;
+    padding: 4px;
+    min-height: 100vh;
+    transition: height 999s;
+}
+.vertical-align {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	width: 100%;
+}
+.card {
+	background: rgb(111, 183, 250);
+    box-shadow: 13px 13px 28px 2px rgba(4, 71, 2, 0.035);
+    padding: 7px 15px;
+}

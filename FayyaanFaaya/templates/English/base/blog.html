@@ -1,0 +1,142 @@
+
+{% extends 'english/base/base.html'%}
+
+{% load static %}
+
+{% block content %}
+
+          <div id="content"> <!-- Content -->
+              <div class="page-title">
+                  <div class="container">
+                      <div class="page-title-inner">
+                          <h3>About Us</h3>
+                          <div class="breadcumb"> <a href="{% url 'index'%}">Home</a><span> / </span><span>About Us</span></div>
+                          <div class="clearfix"></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="container">
+                  <div class="blog">
+                      <div class="row">
+                          <div class="col-md-8 blog-content">
+                              <div class="row">
+                                  <div class="col-md-12 blog-block">
+                                      <div class="inner">
+                                          <div class="blog-image">
+											<i class="fa fa-image"></i>
+                                              <a href=""><img src=" {%static 'images/blog-1.jpg' %}" alt="" class="img-responsive"></a>
+                                          </div>
+                                          <h3 class="blog-post-title"><a href="">Mauris dictum facilisis condimentum</a></h3>
+                                          <div class="blog-meta">July 28, 2014<span>|</span><a href="">23 Comments</a></div>
+                                          <p>
+                                              Morbi ultricies porttitor varius. In hac habitasse platea dictumst. Vestibulum convallis blandit augue quis sagittis. Quisque semper velit dui, sit amet cursus arcu interdum sit amet. Maecenas augue dui, suscipit non fringilla sed, congue vitae purus. Aenean non aliquam mi.
+                                          </p>
+                                          
+                                      </div>
+                                  </div>
+                                      
+                              </div>
+                              
+                              <nav>
+                              <div class="pag-center">
+                                  <ul class="pagination believe-pag">
+                                     
+                                      <li class="active"><span>1</span></li>
+                                      <li><a href="#">2</a></li>
+                                      <li><a href="#">3</a></li>
+                                      <li><a href="#">4</a></li>
+                                      
+                                      
+                                  </ul>
+                              </div>
+                              </nav>
+                              
+                          </div>
+                          <div class="col-md-4 sidebar">
+                              <div class="sidebar-inner">
+                                  <div class="search-widget">
+                                      <h4>Search</h4>
+                                      <form class="side-search">
+                                          <div class="input-group">
+                                              <input type="text" class="form-control search-wid" placeholder="Search Here" aria-describedby="basic-addon3">
+                                              <a href="" class="input-group-addon btn-side-serach" id="basic-addon3"><i class="fa fa-search"></i></a>
+                                          </div>
+                                      </form>
+                                  </div>
+                                  <div class="side-recent">
+                                      <h4>Recent Post</h4>
+                                      <div class="side-recent-ct">
+                                          <div class="row">
+                                              <div class="col-md-4">
+                                                  <a href=""><img src="{% static 'images/rec-blog-1.jpg' %}" alt=""></a>
+                                              </div>
+                                              <div class="col-md-8">
+                                                  <h5><a href="">Lorem ipsum dolor sit amsdf</a></h5>
+                                                  <div class="meta"><a href="">23 Comments</a> April 11, 2014</div>
+												  <p>Morbi ultricies porttitor varius. In hac habitasse platea de...</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="side-recent-ct">
+                                          <div class="row">
+                                              <div class="col-md-4">
+                                                  <a href=""><img src=" {% static 'images/rec-blog-2.jpg' %}" alt=""></a>
+                                              </div>
+                                              <div class="col-md-8">
+                                                  <h5><a href="">Lorem ipsum dolor sit amsdf</a></h5>
+                                                  <div class="meta"><a href="">23 Comments</a> April 11, 2014</div>
+												  <p>Morbi ultricies porttitor varius. In hac habitasse platea de...</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="side-recent-ct">
+                                          <div class="row">
+                                              <div class="col-md-4">
+                                                  <a href=""><img src="{% static 'images/rec-blog-3.jpg' %}" alt=""></a>
+                                              </div>
+                                              <div class="col-md-8">
+                                                  <h5><a href="">Lorem ipsum dolor sit amsdf</a></h5>
+                                                  <div class="meta"><a href="">23 Comments</a> April 11, 2014</div>
+												  <p>Morbi ultricies porttitor varius. In hac habitasse platea de...</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="side-last">
+                                      <h4>Latest Post</h4>
+                                      <div class="side-last-ct">
+                                          <div class="row">
+                                              <div class="col-md-4">
+                                                  <a href=""> <img src="{% static 'images/rec-blog-1.jpg' %}" alt=""></a>
+                                              </div>
+                                              <div class="col-md-8">
+                                                  <h5><a href="">Lorem ipsum dolor sit amsdf</a></h5>
+                                                  <div class="meta"><a href="">23 Comments</a> April 11, 2014</div>
+												  <p>Morbi ultricies porttitor varius. In hac habitasse platea de...</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="side-last-ct">
+                                          <div class="row">
+                                              <div class="col-md-4">
+                                                  <a href=""><img src="{% static 'images/rec-blog-2.jpg'%}" alt=""></a>
+                                              </div>
+                                              <div class="col-md-8">
+                                                  <h5><a href="">Lorem ipsum dolor sit amsdf</a></h5>
+                                                  <div class="meta"><a href="">23 Comments</a> April 11, 2014</div>
+												  <p>Morbi ultricies porttitor varius. In hac habitasse platea de...</p>
+                                              </div>
+                                          </div>
+                                      </div>
+
+                                  </div>
+                                  
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+          </div> <!-- Content -->
+          
+{% endblock %}

@@ -1,0 +1,73 @@
+{% extends 'english/doctor/dashboard.html'%}
+{% load static %}
+
+{% block navbar %}
+            
+<div class="col-lg-12">
+<div class="card">
+<div class="card-header">
+  <div class="card-close">
+    <div class="dropdown">
+      <button class="dropdown-toggle text-sm" type="button" id="closeCard1" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></button>
+      <div class="dropdown-menu dropdown-menu-end shadow-sm" aria-labelledby="closeCard1"><a class="dropdown-item py-1 px-3 remove" href="#"> <i class="fas fa-times"></i>Close</a><a class="dropdown-item py-1 px-3 edit" href="#"> <i class="fas fa-cog"></i>Edit</a></div>
+    </div>
+  </div>
+  <h3 class="h4 mb-0">Add Health related Information</h3>
+</div>
+ <br>
+  {% for message in messages %}
+  
+  <p style="color:red;">{{ message }}</p>
+ 
+  {% endfor %}
+
+<div class="card-body">
+  <form class="form-horizontal" method="POST">
+  {% csrf_token %}
+    <div class="row">
+      <label>Disease name</label><br>
+      <div class="col-sm-9">
+        <input class="form-control" type="text" name="disease">
+      </div>
+    </div>
+      <br>
+    
+        <div class="row">
+      <label>Disease description</label><br>
+      <div class="col-sm-9">
+        <textarea class="form-control" type="text" name="description"></textarea>
+      </div>
+    </div>
+       <br>
+    <div class="row">
+      <label>Disease Symptoms</label><br>
+      <div class="col-sm-9">
+        <textarea class="form-control" type="text" name="symptoms"></textarea>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <label>Disease Treatment</label><br>
+      <div class="col-sm-9">
+        <textarea class="form-control" type="text" name="treatment"></textarea>
+      </div>
+    </div>
+  </div>
+
+    <br>
+    <div class="row">
+      <div class="col-sm-9 ms-auto">
+        <button class="btn btn-primary" type="submit">Add Information</button>
+      </div>
+    </div>
+    <hr>
+      {% for message in messages %}
+  <center>
+  <p style="color:red;">{{ message }}</p>
+  </center>
+  {% endfor %}
+  <hr>
+  </form>
+
+</div>
+    {% endblock %}

@@ -1,0 +1,50 @@
+{% extends 'english/base/header.html'%}
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'subscribe/auto.css'%}">
+
+<!-- content -->
+  <!-- popup -->
+  <div class="popScroll">
+    <div class="popup">
+      <span class="ribbon top-left ribbon-primary">
+        <small>Hello!</small>
+      </span>
+      <br/>
+      <h2>Be Fayyaan Faaya Subscriber</h2>
+      <div class="subscribe-widget">
+        <br/>
+        <!-- form -->
+        <form id="subscribe-form" method="POST">
+          {% csrf_token %}
+
+          <input type="email" name="email" placeholder="Your Email Please" class="email-form" required>
+          <button type="submit" class="button">Subscribe Now</button>
+        </form>
+            {% for mesage in messages %}
+             <p style="color:red;"> {{ message }} </p>
+            {% endfor %}
+      </div>
+      <hr>
+      <p>You can close the subscription form</p>
+      <div id="option">
+        <a href="{% url 'index'%}" id="home" class="boxi">Back to Home</a>
+        <em>or</em>
+        <a href="{% url 'welcome'%}" id="close" class="boxi closei">Close</a>
+        <p class="adstext">If you subscribe to our website you get the following service</p>
+         
+           <pre><p>
+              1. Fayyaan Faaya Health Infos<br>
+              2. Daily Fayyaan Faaya Notifications<br>
+              3. Daily Fayyaan Faaya News and Update
+            </p></pre>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="{% static 'subscribe/auto.js'%}"></script>
+
+  {% endblock %}

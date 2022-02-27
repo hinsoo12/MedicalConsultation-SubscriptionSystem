@@ -1,0 +1,110 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+
+
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+  
+    <script src="{% static 'disease/checkdisease/jquery.js' %}"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'service/bootstrap/css/bootstrap.min.css' %}">
+    
+   <title>Fayyaan Faaya | User Service</title>
+   
+   <link rel="stylesheet" href="{% static 'service/bootstrap/css/bootstrap.min.css' %}">
+   <link rel="stylesheet" href="{% static 'service/css.css' %}">
+    
+
+    {% block top %}
+
+
+
+    {% endblock %}
+
+
+  
+  </head>
+
+
+  <body>
+
+
+
+      <div class="container-fluid">
+
+          <div class="page-header mt-1 mb-1 ml-1 ">
+               
+          </div>
+      
+      
+          <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1b405a;">
+              <a class="navbar-brand" href="">FAYYAAN FAAYA USER SERVICE SITE</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                     <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                          <a class="nav-link" href="{% url 'index'%}">Back to Home page</a>
+                      </li>
+                       {% if request.user.is_authenticated and request.user.is_patient %}
+                      <li class="nav-item ml-2">
+                      <li class="nav-link" href="" style="color: rgb(91, 252, 50);">Hello {{ user.username }}</li>
+                      </li>
+                      <li class="nav-item ml-2">
+                         <a href="{% url 'logout'%}"><button class="btn btn-danger btn-xs" data-toggle="modal" data-target="#logout-modal" style="color: rgb(247, 190, 188);">Log out</button></a>
+                      </li>
+
+                      {% endif %}
+                    </ul>
+                </div>
+      
+            </nav>
+
+     </div>             
+
+    
+<!-- Large modal -->
+
+  {% block check %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {% endblock %}
+
+
+
+
+   <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   
+    <script src="https://code.jquery.com/jquery-3.4.1.js"integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ 
+
+
+</body>
+</html>

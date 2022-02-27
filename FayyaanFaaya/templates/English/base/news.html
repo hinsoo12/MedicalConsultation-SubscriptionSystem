@@ -1,0 +1,46 @@
+{% extends 'english/base/base.html'%}
+
+{% load static %}
+
+{% block body %}
+
+          <div id="content"> <!-- Content -->
+              <div class="page-title">
+                  <div class="container">
+                      <div class="page-title-inner">
+                          <h3>Fayyaan Faaya News</h3>
+                          <div class="breadcumb"> <a href="{% url 'index'%}">Home</a><span> / </span><span>New</span></div>
+                          <div class="clearfix"></div>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="container">
+                  <div class="blog">
+                  <center>
+                      <div class="row">
+                          <div class="col-md-8 blog-content">
+                              <div class="row">
+                                  <div class="col-md-12 blog-block">
+                                      <div class="inner">
+                                      {% for new in news %}
+                                          <h3 class="blog-post-title"><a href="">{{ new.title }}</a></h3>
+                                          <p>
+                                          {{ new.content }}
+                                          </p>
+                                           
+                                        {% endfor %}
+                                      </div>
+                                  </div>     
+                              </div>
+                              
+                          </div>
+                        </center>
+                      </div>
+                  </div>
+              </div>
+             
+
+        </div> <!-- Content -->
+      
+{% endblock %}

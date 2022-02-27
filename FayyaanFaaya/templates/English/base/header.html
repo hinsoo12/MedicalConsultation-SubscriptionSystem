@@ -1,0 +1,238 @@
+
+ {% load static %}
+
+ <head>
+   <meta charset="utf-8">
+   <title>Fayyaan-Faaya For Better Informations</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- fonts -->
+   <link href="{% static 'health/font-awesome/css/font-awesome.css' %}" rel='stylesheet' type='text/css'>
+     
+   <!-- Bootstrap -->
+   <link href="{% static 'health/css/bootstrap.min.css' %}" rel="stylesheet">
+   
+   <!-- main css -->
+   <link href="{% static 'health/css/style.css' %}" rel="stylesheet">
+   <link href="{% static 'health/css/responsive.css' %}" rel="stylesheet">
+   
+   <!-- Slider -->
+   <link href="{% static 'health/css/owl.carousel.css' %}" rel="stylesheet">
+   <link href="{% static 'health/css/owl.theme.css' %}" rel="stylesheet">
+   <link href="{% static 'health/css/owl.transitions.css' %}" rel="stylesheet"> 
+     
+   <!-- lightbox -->
+   <link href="{% static 'health/css/prettyPhoto.css' %}" rel="stylesheet">
+
+ </head>
+ <body>
+
+     <div id="wrapper" class="homepage-1"> <!-- wrapper -->
+         <div id="header"> <!-- header -->
+             <div class="top"> <!-- top -->
+                 <div class="container">
+                     <ul class="top-support"> 
+                         <li><i class="fa fa-phone-square"></i><span>(+251) 966 453 047</span></li>
+                         <li><a href=""><i class="fa fa-envelope-square"></i><span>fayyaanfaaya4all.com</span></a></li>
+                     </ul>
+                     <div class="top-offers">
+                         <div class="alert alert-warning alert-dismissible fade in offers" role="alert">
+                             <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times-circle"></i></span></button>
+                            Get news & updates about <a href=""> COVID 19</a>
+                         </div>
+                     </div>
+                     <div class="top-control">
+                         <span></span><a href="{% url 'index'%}">English</a> <span></span><a href="#">Afaan Oromoo</a>
+                     </div>
+                     <div class="clearfix"></div>
+                     <div class="top-offers show-mobile">
+                         <div class="alert alert-warning alert-dismissible fade in offers" role="alert">
+                             <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times-circle"></i></span></button>
+                             Get news and update <a href=""> of Corona Virus(COVID-19)</a>
+                         </div>
+                     </div>
+                 </div>
+             </div> <!-- top -->
+             
+             <div id="believe-nav"> <!-- Nav -->
+                 <div class="container">
+                     <div class="min-marg">
+                         <nav class="navbar navbar-default">
+                             <!-- <div class="container-fluid"> -->
+                                 <!-- Brand and toggle get grouped for better mobile display -->
+                                 <div class="navbar-header">
+                                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                         <span class="sr-only">Fayyaan Faaya</span>
+                                         <span class="icon-bar"></span>
+                                         <span class="icon-bar"></span>
+                                         <span class="icon-bar"></span>
+                                     </button>
+                                    
+                                 </div>
+
+                                 <!-- Collect the nav links, forms, and other content for toggling -->
+                                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                     <ul class="nav navbar-nav">
+                                         <li class="active"><a href="{% url 'index'%}">Home <span class="sr-only">(current)</span></a></li>
+                                         <li><a href="{% url 'about'%}">About Us</a></li>
+                                        <!-- <li><a href="blog-detail.html">Blog Post</a></li> -->
+                                         <li><a href="{% url 'contact'%}">Contact Us</a></li>
+                                         <li><a href="#"></a></li>
+                                     </ul>
+                                    
+                                     <ul class="nav navbar-nav navbar-right">
+                                         <li><a href="{% url 'subscriber'%}"><span>Subscribe</span></a></li>
+                                         <li><a href="{% url 'patient_signup'%}"><span>Register</span></a></li>
+
+                                     </ul>
+                                    
+                                 </div><!-- /.navbar-collapse -->
+                             <!--</div> -->
+                             
+                         </nav>
+                     </div>
+                    
+                 </div>
+             </div>
+            
+             
+             <div id="cat-nav">
+             <div class="container">
+                 <nav class="navbar navbar-default">
+                     <!-- <div class="container-fluid"> -->
+                     <!-- Brand and toggle get grouped for better mobile display -->
+                     <div class="navbar-header">
+                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#cat-nav-mega">
+                             <span class="sr-only">Fayyaan Faaya</span>
+                             <span class="icon-bar"></span>
+                             <span class="icon-bar"></span>
+                             <span class="icon-bar"></span>
+                         </button>
+                     </div>
+
+                     <!-- Collect the nav links, forms, and other content for toggling -->
+                     <div class="collapse navbar-collapse" id="cat-nav-mega">
+                         <ul class="nav navbar-nav">
+                             
+                             <li class="dropdown menu-large">
+                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">HEALTH CENTERS <i class="fa fa-angle-down"></i></a>
+                                 <ul class="dropdown-menu megamenu" role="menu">
+                                     
+                                     
+                                     <li>
+                                          <div class="">
+                                              <div class="mega-sub">
+                                                  <div class="mega-sub-title">Diseases & Conditions</div>
+                                                  <ul>
+													<li><a href="{% url 'cancer'%}">Cancer</a></li>
+													<li><a href="#">Cold & Flu </a></li>
+													<li><a href="#">COVID-19</a></li>
+													<li><a href="#">Diabets</a></li>
+													<li><a href="#">Eye Health</a></li>
+													<li><a href="#">Heart Disease</a></li> 
+													<li><a href="#">HIV</a></li>
+                                                    <li><a href="#">Malaria</a></li>
+                                                    <li><a href="#">Lung Disease</a></li>
+                                                    <li><a href="{% url 'notfound'%}">View All Topics A-Z</a></li>
+                                                  </ul>
+                                              </div>
+                                              <div class="mega-sub">
+                                                  <div class="mega-sub-title">AVAILABLE RESOURCE</div>
+                                                  <ul>
+                                                    <li><a href="{% url 'checkdisease'%}">Symptom Checker</a></li>
+                                                    <li><a href="{% url 'notfound'%}">View All Symptoms</a></li>
+                                                   {% if request.user.is_authenticated and request.user.is_patient %}
+                                                     
+                                                     <li><a href="{% url 'chatbot'%}">Fayyaan Faaya Chatbot</a></li>
+                                                     <li><a href="{% url 'doctor_profile'%}">Find Doctor</a></li>
+													
+                                                    {% endif %}
+                                                  </ul>
+                                              </div>
+
+                                              <div class="mega-sub">
+                                                  <div class="mega-sub-title">Wellness Topics</div>
+                                                  <ul>
+                                                  <li><a href="{% url 'notfound'%}">Aging Well</a></li>
+                                                  {% if request.user.is_authenticated and request.user.is_patient %}
+                                                    <li><a href="{% url 'notfound'%}">Healthy Teens</a></li>
+                                                    <li><a href="{% url 'notfound'%}">Men's Health</a></li>
+                                                    <li><a href="{% url 'notfound'%}">Mental Health</a></li>
+                                                    <li><a href="{% url 'notfound'%}">Nutrition</a></li>
+                                                    <li><a href="{% url 'notfound'%}">Parenthood</a></li>
+													<li><a href="{% url 'notfound'%}">Sex & Relationship</a></li>
+													<li><a href="{% url 'notfound'%}">Sleep </a></li>
+                                                    <li><a href="{% url 'notfound'%}">Women's Health</a></li>
+                                                    
+                                                    {% endif %}
+                                                  </ul>
+                                              </div>
+                                              
+                                              <div class="mega-sub">
+                                                  <div class="mega-sub-title">FAQs with Experts</div>
+                                                  <ul>
+                                                    <li><a href="https://bing.com/covid" target="_blank">COVID-19 Tracker,Vaccines & Chronic Conditions</a></li>
+                                                    {% if request.user.is_authenticated and request.user.is_patient %}
+                                                    <li><a href="{% url 'notfound'%}">Can Dehydration Affect Your Eyes?</a></li>
+                                                    <li><a href="{% url 'notfound'%}">Sex After Menopause</a></li>
+                                                    <li><a href="{% url 'notfound'%}">Treating Depression</a></li>
+													<li><a href="{% url 'notfound'%}">What Are the Injections for Type 2 Diabets</a></li>
+                                                    {% endif %}
+                                                  </ul>
+                                              </div>
+                                               <div class="mega-sub">
+                                                <div class="mega-sub-title">News & Events</div>
+                                                  <ul>
+                                                    <li><a href="{% url 'news'%}">Health News</a></li>
+                                                    <li><a href="{% url 'news'%}">COVID-19</a></li>
+                                                  </ul>
+                                              </div>
+                                              <div class="clearfix"></div>
+                                          </div>
+
+                                      </li>
+
+                                 </ul>
+                             </li>
+                             <li><a href="{% url 'checkdisease'%}" target="_blank">CHECK YOUR SYMPTOM </a></li>
+                         </ul>
+                          
+                     </div><!-- /.navbar-collapse -->
+                     <!--</div> -->
+                 </nav>
+             </div>
+             </div>     
+         </div> <!-- header -->
+
+         <div id="main-slider"> <!-- Slider -->
+            <div id="home-slider" class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="{% static 'health/images/bg1.jpg' %}" alt="slide-1" class="img-responsive">
+                    <div class="slider-desc">
+                        <div class="container">
+                            <div class="row">
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Kan fayyaa qabu waan dhabe hin qabu</h3>
+                </div>
+
+                <div class="item">
+                    <img src="{% static 'health/images/bg2.PNG' %}" alt="slide-1" class="img-responsive">
+                    <div class="slider-desc">
+                        <div class="container">
+                            <div class="row">
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Kan fayyaa qabu waan dhabe hin qabu</h3>
+                </div>
+
+            </div>
+            
+        </div> <!-- Slider -->
+         
+        {% block content%}
+
+        {% endblock %}

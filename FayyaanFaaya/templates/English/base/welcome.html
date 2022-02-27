@@ -1,0 +1,39 @@
+
+ {% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Fayyaan Faaya Welcome Page</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'welcome/wel.css'%}"/>
+</head>
+
+<body>
+	
+	<img src="{% static 'health/images/logo.png'%}" border="0">
+    <hr>
+    <h1 style="color:#333;width:100%; text-align:center;"><i>Fayyaan Faaya Online Medical Consultation and Subscription System</i></h1>
+    <img src="{% static 'health/images/logo1.png'%}" width="128" height="128">
+    <div class="submition">
+    	<div class="subleft">
+        	<strong>We are always here:</strong><br>
+            To give health service.<br>
+            Be Health <br>
+            Be Strong
+        </div>
+        <div class="subright">
+        	<strong>Kaayyoon keenya guddaan:</strong><br>
+            Tajaajila Fayyaa kennudha.<br>
+            Fayyaa hin dhabina<br>
+            qalbii hin cabina
+        </div>
+    </div>
+    <a href="{% url 'index'%}">
+    <div class="entry">Click here to Continue</div>
+    </a>
+    <br><br>
+	<hr>
+</body>
+<script type="text/javascript" src="{% static 'welcome/jquery-1.11.0.min.js'%}"></script>
+</html>

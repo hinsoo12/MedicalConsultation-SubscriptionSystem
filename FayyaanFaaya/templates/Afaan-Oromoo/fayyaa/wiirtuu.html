@@ -1,0 +1,161 @@
+
+{% extends 'Afaan-Oromoo/fayyaa/hundee.html'%}
+
+{% load static %}
+
+        {% block content%}
+
+          <div id="main-slider"> <!-- Slider -->
+              <div id="home-slider" class="owl-carousel owl-theme">
+                  <div class="item">
+                      <img src="{% static 'health/images/bg1.jpg' %}" alt="slide-1" class="img-responsive">
+                      <div class="slider-desc">
+                          <div class="container">
+                              <div class="row">
+                              </div>
+                          </div>
+                      </div>
+                      <h3>Kan fayyaa qabu waan dhabe hin qabu</h3>
+                  </div>
+
+                  <div class="item">
+                      <img src="{% static 'health/images/bg2.PNG' %}" alt="slide-1" class="img-responsive">
+                      <div class="slider-desc">
+                          <div class="container">
+                              <div class="row">
+                                 
+                              </div>
+                          </div>
+                      </div>
+                      <h3>Kan fayyaa qabu waan dhabe hin qabu</h3>
+                  </div>
+
+              </div>
+             
+
+              
+          </div> <!-- Slider -->
+          
+          <div id="content"> <!-- Content -->
+             
+              <div class="newest">
+                  <div class="container">
+                      <div class="newest-content">
+                          <div class="newest-tab">
+                              <ul id="myTab" class="nav nav-tabs newest" role="tablist">
+                                  <li role="presentation" class="active">
+                                      <a href="#1" id="cat-1" role="tab" data-toggle="tab" aria-controls="1" aria-expanded="true">Free Services</a>
+                                  </li>
+                                  <li role="presentation">
+                                      <a href="#2" role="tab" id="cat-2" data-toggle="tab" aria-controls="2">Paid Services</a>
+                                  </li>
+                                  <li role="presentation">
+                                      <a href="#3" role="tab" id="cat-3" data-toggle="tab" aria-controls="3">Tajaajiloota Keenya</a>
+                                  </li>
+                              </ul>
+                              <div id="myTabContent" class="tab-content">
+                                  <div role="tabpanel" class="tab-pane fade in active" id="1" aria-labelledby="cat-1">
+                                      <div class="row clearfix">
+                                          <div class="col-md-3 prdct-grid">
+                                              <div class="product-name">
+                                                  <a href="">Oddeeffannoo Waa'ee Fayyaa</a>
+                                              </div>
+                                          </div>
+
+                                          <div class="col-md-3 prdct-grid">
+                                              <div class="product-name">
+                                                  <a href="{% url 'checkdisease'%}">Mallattoo Kee Bari</a>
+                                              </div>
+                                          </div>
+                                          <div class="col-md-3 prdct-grid">
+                                              <div class="product-name">
+                                                  <a href="">Gorsa Fayyaa Argadhu</a>
+                                              </div>
+                                          </div>
+                                          
+                                          <div class="col-md-3 prdct-grid">
+                                              <div class="product-name">
+                                                  <a href="">Tajaajila Fayyaan Bakka tokkoti</a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  
+                                  <div role="tabpanel" class="tab-pane fade" id="2" aria-labelledby="cat-2">
+                                      <div class="row">
+                                          <div class="col-md-12">
+                                              <p><a href="#">Oddeeffannoo Waa'ee Fayyaa</a></p>
+                                              <p><a href="#">FindCare-FindDoctor Service</a></p>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  
+                                  <div role="tabpanel" class="tab-pane fade" id="3" aria-labelledby="cat-3">
+                                      <div class="row">
+                                          <div class="col-md-12">
+                                              <p><a href="#">Symptom Checkiong Service</a></p>
+                                              <p><a href="#">Providing Health Info Service</a></p>
+                                              <p><a href="#">Medical Consultation Service</a></p>
+                                              <p><a href="#">FindCare-FindDoctor Service</a></p>
+                                              
+                                          </div>
+                                      </div>
+                                  </div> 
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            <!--
+              <div class="brands">
+                  <div class="container">
+                      <div class="brands-inner">
+                          <div class="brand-title">
+                              <span>WE WORK WITH</span>
+                          </div>
+                          
+                          <div id="slider-home"> 
+                              <div id="brand-carousel" class="owl-carousel owl-theme">
+                                  <div class="item">
+                                      <img src="{%static 'images/brand-2.png'%}" alt="slide-1" class="img-responsive">
+                                  </div>
+                                  <div class="item">
+                                      <img src="{%static 'images/brand-3.png'%}" alt="slide-1" class="img-responsive">
+                                  </div>
+                                  <div class="item">
+                                      <img src="{% static 'images/brand-4.png'%}" alt="slide-1" class="img-responsive">
+                                  </div>
+                                  <div class="item">
+                                      <img src="{% static 'images/brand-1.png'%}" alt="slide-1" class="img-responsive">
+                                  </div>
+                                  <div class="item">
+                                      <img src="{% static 'images/brand-5.png'%}" alt="slide-1" class="img-responsive">
+                                  </div>
+                                  <div class="item">
+                                      <img src="{% static 'images/brand-2.png'%}" alt="slide-1" class="img-responsive">
+                                  </div>
+                                  <div class="item">
+                                      <img src="{% static 'images/brand-3.png'%}" alt="slide-1" class="img-responsive">
+                                  </div>
+                                  <div class="item">
+                                      <img src="{% static 'images/brand-4.png'%}" alt="slide-1" class="img-responsive">
+                                  </div>
+                                  <div class="item">
+                                      <img src="{% static 'images/brand-1.png'%}" alt="slide-1" class="img-responsive">
+                                  </div>
+                                  <div class="item">
+                                      <img src="{% static 'images/brand-5.png'%}" alt="slide-1" class="img-responsive">
+                                  </div>
+                              </div>
+                          </div> 
+                          
+                      </div>
+                  </div>
+              </div>
+            -->
+          </div> 
+          
+        
+     {% endblock %}
+
+           

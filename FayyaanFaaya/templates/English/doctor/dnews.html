@@ -1,0 +1,33 @@
+{% extends 'english/doctor/dashboard.html'%}
+{% load static %}
+
+{% block navbar %}
+            
+<div class="col-lg-12">
+<div class="card">
+<div class="card-header">
+  <div class="card-close">
+    <div class="dropdown">
+      <button class="dropdown-toggle text-sm" type="button" id="closeCard1" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></button>
+      <div class="dropdown-menu dropdown-menu-end shadow-sm" aria-labelledby="closeCard1"><a class="dropdown-item py-1 px-3 remove" href="#"> <i class="fas fa-times"></i>Close</a><a class="dropdown-item py-1 px-3 edit" href="#"> <i class="fas fa-cog"></i>Edit</a></div>
+    </div>
+  </div>
+  <h3 class="h4 mb-0">Fayyaan Faaya News</h3>
+</div>
+ <br>
+
+<div class="card-body">
+  <center>
+    {% for new in news %}
+    <h3><a href="">{{ new.title }}</a></h3>
+    <p>
+    {{ new.content }}
+    </p>
+    <br><br>
+     {% endfor %}
+  </center>
+  
+</div>
+</div>
+</div>
+{% endblock %}

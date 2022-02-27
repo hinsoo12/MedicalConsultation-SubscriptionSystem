@@ -1,0 +1,79 @@
+{% extends 'english/base/base.html'%}
+
+{% load static %}
+
+{% block body %}
+          
+          <div id="content"> <!-- Content -->
+              <div class="page-title">
+                  <div class="container">
+                      <div class="page-title-inner">
+                          <h3>Contact us</h3>
+                          <div class="breadcumb"> <a href="{% url 'index'%}">Home</a><span> / </span><span>Contact us</span></div>
+                          <div class="clearfix"></div>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="about-page">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-md-6 ct-desc">
+                              <h3>Our Target</h3>
+                              <div class="post-content">
+                                  <h4>
+                                      <span>Fayyaan Faaya is health provider system</span> that tries to support community in providing health related information.
+                                  </h4>
+                              </div>
+                              <p>
+                                  Our mission is to bring you objective, trustworthy, and timely health information. Customer care is important to us. 
+                                  Please search our FAQs for immediate answers to the most common questions asked by others, or send us an email.
+                              </p>
+                              <h3 class="contact-loc">Our contacts</h3>
+                              <div class="row loc-det">
+                                  <div class="col-md-4">
+                                      <p>
+                                        (+251) 966 453 047<br>
+                                        fayyaanfaaya4all@gmail.com<br>
+                                        www.fayyaanfaaya.com<br>
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-1">
+                          </div>
+                          <div class="col-md-5 ct-form">
+                              <h3>Get in touch with us</h3>
+                              
+                              <form class="contact-form" action="" method="POST">
+                              {% for message in messages %}
+                                <h4>{{ message }}</h4>
+                              {% endfor %}
+                              {% csrf_token %}
+                                  <div class="form-group">
+                                      <label for="cf_name">Your Name*</label>
+                                      <input type="text" class="form-control" name="cf_name" id="cf_name" placeholder="Enter full name">
+                                  </div>
+
+                                  <div class="form-group">
+                                      <label for="cf_email">Your E-mail*</label>
+                                      <input type="email" class="form-control" name="cf_email" id="cf_email" placeholder="Your email address">
+                                  </div>
+
+                                  <div class="form-group">
+                                      <label for="cf_message">Message*</label>
+                                      <textarea class="form-control" name="cf_message" id="cf_message"></textarea>
+                                  </div>
+
+                                  <button type="submit" class="btn btn-blue">Submit</button>
+                              </form>
+                          </div>
+                      </div>
+                      </div>
+                  </div>
+              </div>
+
+          </div> <!-- Content -->
+          
+          
+ {% endblock %}

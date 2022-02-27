@@ -1,0 +1,65 @@
+{% extends 'English/account/home.html'%}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fayyaan Faaya | Registeration</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="all,follow">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700">
+    <link rel="stylesheet" href="{% static 'account/signup/css/style.default.css'%}" id="theme-stylesheet">
+  </head>
+  <body>
+
+    <div class="login-page">
+      <div class="container d-flex align-items-center position-relative py-5">
+        <div class="card shadow-sm w-100 rounded overflow-hidden bg-none">
+          <div class="card-body p-0">
+            <div class="row gx-0 align-items-stretch">
+              <!-- Logo & Information Panel-->
+              <div class="col-lg-6">
+                <div class="info d-flex justify-content-center flex-column p-4 h-100">
+                  <div class="py-5">
+                    <h4>Fayyaan Faaya Medical Consultation <br> Patient Account Creation <h4>
+                    <h1 class="display-6 fw-bold">Create Account</h1>
+                    <p class="fw-light mb-0"></p>
+                  </div>
+                </div>
+              </div>
+              <!-- Form Panel    -->
+              <div class="col-lg-6 bg-white">
+                <div class="d-flex align-items-center px-4 px-lg-5 h-100">
+                  <form class="register-form py-5 w-100" method="POST" action="">
+                    {% csrf_token %}
+                    <div class="input-material-group mb-3">   
+                         {{form|crispy}}
+                    </div>                    
+                    <button class="btn btn-primary mb-3" id="login" type="submit">Register</button><br><small class="text-gray-500">Already have an account?  </small><a class="text-sm text-paleBlue" href="{% url 'login'%}">Login</a>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center position-absolute bottom-0 start-0 w-100 z-index-20">
+        <p class="text-white"><a class="external" href="">Fayyaan Faaya</a></p>
+      </div>
+    </div>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  </body>
+</html>
+
+{% endblock %}
+
+
+
+
+

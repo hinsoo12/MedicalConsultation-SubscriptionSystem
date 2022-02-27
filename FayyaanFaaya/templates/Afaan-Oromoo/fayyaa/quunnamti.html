@@ -1,0 +1,75 @@
+{% extends 'Afaan-Oromoo/fayyaa/hundee.html'%}
+{% load static %}
+
+{% block content %}
+          
+          <div id="content"> <!-- Content -->
+              <div class="page-title">
+                  <div class="container">
+                      <div class="page-title-inner">
+                          <h3>Nu Quunnami</h3>
+                          <div class="breadcumb"> <a href="{% url 'index'%}">Wiirtuu</a><span> / </span><span>Nu Quunnami</span></div>
+                          <div class="clearfix"></div>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="about-page">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-md-6 ct-desc">
+                              <h3>Kaayyoo Keenya</h3>
+                              <div class="post-content">
+                                  <h4>
+                                      <span>Fayyaan Faaya </span> maarsaritii haaraya Oddeeffannoo waa'ee fayyaa fi fayyaan wal qabatu kennudha. Fayyaa hin dhabina! Kan Fayyaa qabu waan dhabe hin qabu.
+                                  </h4>
+                              </div>
+                              <p>Kaayyoon keenya fayyaa ummataa keenya eegudha. Nuu Quunnamu yoo feetan 'email' keessan wajjiin ergicha nuuf erga.</p>
+                              <h3 class="contact-loc">Nu Quunnamuuf</h3>
+                              <div class="row loc-det">
+                                  <div class="col-md-4">
+                                      <p>
+                                          (+251) 966 453047<br/>
+                                          fayyaanfaaya4all.com<br/>
+                                          www.fayyaanfaaya.com<br/>
+                                      
+                                      </p>
+                                  </div>
+                                  <div class="col-md-4">
+                                      <p>
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-1">
+                          </div>
+                          <div class="col-md-5 ct-form">
+                              <h3>Erga nuuf kaayi</h3>
+                              <form class="contact-form" action="" method="POST">
+                                  <div class="form-group">
+                                      <label for="cf_name">Maqaa kee guutuu*</label>
+                                      <input type="text" class="form-control" name="cf_name" id="cf_name" placeholder="">
+                                  </div>
+
+                                  <div class="form-group">
+                                      <label for="cf_email">E-mail kankee*</label>
+                                      <input type="email" class="form-control" name="cf_email" id="cf_email" placeholder="">
+                                  </div>
+
+                                  <div class="form-group">
+                                      <label for="cf_message">Egicha *</label>
+                                      <textarea class="form-control" name="cf_message" id="cf_message"></textarea>
+                                  </div>
+
+                                  <button type="submit" class="btn btn-blue">Ergi</button>
+                              </form>
+                          </div>
+                      </div>
+                      </div>
+                  </div>
+              </div>
+
+          </div> <!-- Content -->
+          
+          
+ {% endblock %}
